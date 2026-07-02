@@ -6,7 +6,7 @@ on:
       tag:
         description: 'Branch or tag'
         required: true
-        default: 'adreno-debian-trixie'
+        default: 'adreno-main'
       draft_release:
         description: 'Draft a new release'
         required: true
