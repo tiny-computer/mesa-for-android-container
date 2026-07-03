@@ -60,8 +60,7 @@ jobs:
           export CCACHE_DIR=/root/.ccache
           echo "Building Mesa..."
           cd ~/mesa-for-android-container
-          origtargz
-          gbp buildpackage -uc -us -jauto --git-ignore-branch
+          dpkg-buildpackage -b -uc -us -jauto
           echo "Mesa build completed successfully!"
 
       - name: Save ccache
